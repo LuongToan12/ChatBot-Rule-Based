@@ -63,5 +63,19 @@ Danh sách này được thiết kế theo nguyên lý **Độ ưu tiên giảm 
 * Máy tính đã cài đặt **Python 3.x**
 * Đã cài đặt thư viện xử lý ngôn ngữ tự nhiên **NLTK**
 
-```bash
+bash
 pip install nltk
+
+## 5. Ưu và nhược điểm
+
+Ưu điểm:
+Tốc độ phản hồi cực nhanh: Tính toán dựa trên luật biểu thức chính quy (Regex) tiêu tốn rất ít tài nguyên CPU.
+
+Tính chính xác tuyệt đối: Bot hoạt động đúng 100% theo các kịch bản định sẵn, không xảy ra hiện tượng "ảo tưởng" (hallucination) như các mô hình AI tạo sinh (LLM).
+
+Dễ kiểm soát: Quản trị viên dễ dàng thêm mới các cặp câu hỏi/trả lời bằng cách mở rộng danh sách pairs.
+
+Nhược điểm & Hướng phát triển:
+Thiếu linh hoạt: Nếu người dùng gõ sai chính tả hoặc dùng từ đồng nghĩa chưa được cấu hình trong Regex, chatbot sẽ rơi vào trạng thái không hiểu (Fallback).
+
+Không có bộ nhớ ngữ cảnh sâu: Hệ thống chỉ xử lý độc lập từng câu (Turn-by-turn) chứ không lưu trữ được trạng thái câu chuyện dài lâu.
