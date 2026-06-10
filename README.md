@@ -1,8 +1,8 @@
-# Rule-Based Chatbot (John) sử dụng NLTK
+# Rule-Based Chatbot sử dụng NLTK
 
 Dự án này triển khai một chatbot phản hồi tự động dựa trên tập quy tắc kịch bản cấu hình trước (Rule-Based Chatbot) thông qua mô-đun `nltk.chat.util.Chat` của thư viện xử lý ngôn ngữ tự nhiên NLTK. Chatbot sử dụng Biểu thức chính quy (Regular Expressions) để nhận diện ý định và trích xuất thực thể từ câu lệnh của người dùng.
 
-## 📋 Mục lục
+## Mục lục
 1. [Tổng Quan Kiến Trúc](#1-tổng-quan-kiến-trúc)
 2. [Sơ Đồ & Quy Trình Thực Hiện](#2-quy-trình-thực-hiện)
 3. [Chi Tiết Cấu Hợp Phần Dữ Liệu](#3-chi-tiết-cấu-hợp-phần-dữ-liệu)
